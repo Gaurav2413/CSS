@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main 
+        {
+            height: 40px;
+            width: 100px;
+            background: black;
+            margin:100px 100px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            line-height: 35px;
+            z-index: 0;
+            color: white;
+        }
+        .main2 
+        {
+            height: 40px;
+            width: 100px;
+            background: black;
+            transform: translate(200px,-140px);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            line-height: 35px;
+            z-index: 0;
+            color: white;
+        }
+            .main3
+        {
+            height: 40px;
+            width: 100px;
+            background: black;
+            transform: translate(300px,-180px);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            line-height: 35px;
+            z-index: 0;
+            color: white;
+
+        }
+        .main4
+        {
+            height: 40px;
+            width: 100px;
+            background: black;
+            transform: translate(400px,-220px);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            line-height: 35px;
+            z-index: 0;
+            color: white;
+            
+        }
+        .main5
+        {
+            height: 40px;
+            width: 120px;
+            background: black;
+            position: relative;
+                transform: translate(500px, -260px);
+            overflow: hidden;
+            text-align: center;
+            line-height: 35px;
+            z-index: 0;
+            color: white;
+            }
+        
+        
+        .effect
+        {
+            height: 10px;
+            width: 120px;
+            background: rgb(0, 255, 255);
+            position: absolute;
+            top: 35px;
+            left:-120%;
+            transition: 1s;
+            z-index: -1;
+            
+           
+        }
+
+        .main:hover .effect
+        {
+            left:0%;
+            
+        }
+        .main2:hover .effect
+        {
+            left:0%;
+            
+        }
+        .main3:hover .effect
+        {
+            left:0%;
+            
+        }
+        .main4:hover .effect
+        {
+            left:0%;
+            
+        }
+        .main5:hover .effect
+        {
+            left:0%;
+            
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="main">
+              HOME
+            <div class="effect "></div>
+        </div>
+
+        <div class="main2">
+             ABOUT
+            <div class="effect"></div>
+        </div>
+
+        <div class="main3">
+                CONTACT
+            <div class="effect"></div>
+        </div>
+
+        <div class="main4">
+            MAN'S 
+        <div class="effect"></div>
+        </div>
+
+        <div class="main5">
+            WOMAN'S
+        <div class="effect"></div>
+        </div>
+</div>
+</body>
+</html>
