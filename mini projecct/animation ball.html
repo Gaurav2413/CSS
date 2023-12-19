@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #000;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .core
+        {
+          position: relative;
+          height: 250px;
+          width: 250px;
+          background: linear-gradient(coral, blue);
+          
+          border-radius: 50%;
+          margin: 150px auto;
+          z-index: 3;
+        }
+
+        .ring
+        {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(coral, blue);
+            border-radius: inherit;
+            opacity: 1;
+            animation: ringrong 4s ease-out infinite;
+        }
+       
+@keyframes ringrong 
+{
+    100%
+    {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+
+}
+
+    .ring2
+        {
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            
+            background: url(https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            background-size: cover;
+            border-radius: inherit;
+            opacity: 2;
+            animation: ringrong1 4s ease-out infinite;
+
+        }
+       
+@keyframes ringrong1
+{
+    100%{
+        opacity: 1;
+        transform: scale(1.3 );
+    }
+}
+
+    .name
+    {
+        font-size: 50px;
+        color: goldenrod;
+        text-align: center;
+        margin-top: -50px;
+    }
+    .listname
+    {
+        font-size: 70px;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <div class="core">
+        <div class="ring">
+
+        </div>
+        <div class="ring2"></div>
+        
+    </div>
+    <div class="name"> <span class="listname">G</span>aurav Naga<span class="listname">R</span></div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>play button</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;       }
+        .background
+        {
+            background: black;
+            height:100vh;
+            width: 100vw;
+            position: absolute;
+            
+        }
+        .m
+        {
+            height: 200px;
+            width: 200px;
+            background:white;
+            border-radius: 50%;
+            position: absolute;
+            /* top: 50px;
+            left: 50px; */
+            z-index: 0;
+            /* animation: big infinite ease-out ; */
+        }
+
+        .l
+        {
+           
+            height: 200px;
+            width: 200px;
+            background:white;
+            border-radius: 50%; 
+            position: absolute;
+            /* top: 50px;
+            left: 50px; */
+            opacity: 1;
+            transform: scale(1);
+           
+            z-index: 2;
+            
+            
+        }
+        .xl
+        {
+           
+            height: 200px;
+            width: 200px;
+            background:white;
+            border-radius: 50%; 
+            position: relative;
+            margin: 200px auto;
+            opacity: 1;
+            transform: scale(1.2);
+            
+            z-index: 1;
+        }
+
+        .l:hover 
+        {
+            transform: scale(1.5);
+            opacity: 0.10;  
+            transition: 3s;
+        }
+        .m:hover 
+        {
+            transform: scale(1.6);
+            opacity: 0.1;
+            transition: 4s;
+        }
+       
+        
+    </style>
+</head>
+<body>
+<div class="background">
+    <div class="xl">
+        <div class="l">
+            <div class="m"><b>Gaurav</b></div>
+        </div>
+    </div>
+</div>    
+    
+</body>
+</html>

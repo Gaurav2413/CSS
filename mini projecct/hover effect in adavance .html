@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav design by hover </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dropdown.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .fn
+        {
+            height: 10px;
+            width: 100%;
+            display: flex;
+            /* justify-content: center; */
+        }
+
+        .fne
+        {
+            height: 30px;
+            width: 290px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            line-height: 20px;
+            border-right:  1px solid gray;
+            letter-spacing: 2px;
+        }
+        .fne2
+        {
+            height: 30px;
+            width: 180px;
+            background-color: black;
+            border-right:  1px solid gray;
+            
+        }
+        .fa
+        {
+            color:aqua;
+            margin: 7px 10px;
+
+        }
+        .sne
+        {
+            height: 130px;
+            width: 60%;
+            background-color: white;
+            padding: 40px;
+        }
+
+        .sb
+        {
+           height: 50px;
+           width: 400px; 
+        }
+        .sbb
+        {
+            height: 50px;
+            width: 50px;
+            background-color: aqua;
+            margin: -50px 410px;
+            font-size: 30px;
+            
+        }
+        .botton
+        {
+            color: white;
+        }
+        .Ed
+        {
+            height: 70px;
+            width: 350px;
+            margin: -60px 500px ;
+            font-size: 55px;
+            background-color: white;
+        }
+        .E
+        {
+            height: 75px;
+            width: 60px;
+            background-color: black;
+            color: white;
+            
+            font-size: 55px;
+            text-align: center;
+            font-family:Geologica;
+            display: inline-block;
+        }
+        .bi
+        {
+            font-size: 17px;
+            display: block;
+            margin: -11px 280px;
+
+        }
+        .sod
+        {
+            height: 60px;
+            width: 400px;
+            background-color:white;
+            margin: 0 900px;
+            font-size: 20px;
+            padding:15px 50px;
+        }
+        .maindiv
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            background: black;
+            margin-top: 0px;
+            width: 100%;
+            
+        }
+        .main 
+        {
+            height: 40px;
+            width: 150px;
+            background: black;
+            /* margin:100px 100px; */
+            position: relative;
+            /* overflow: hidden; */
+            text-align: center;
+            line-height: 35px;
+            /* border: 2px solid white; */
+            /* z-index: 0; */
+            color: white;
+            
+
+        }
+      
+        .effect
+        {
+            height: 5px;
+            width: 0;
+            background: rgb(0, 255, 255);
+            position: absolute;
+            bottom: 0;
+            /* left:0; */
+            right: 0;
+            transition: 0.5s;
+            /* z-index: -1; */
+            
+           
+        }
+
+        .main:hover .effect
+        {
+            left:0%;
+            width: 100%;
+        }
+        
+        .main:hover .drop
+        {
+            display: flex;
+        }       
+       
+    </style>
+</head>
+<body>
+    <!-- first nav bar code -->
+    <div class="fn">
+        <div class="fne2"></div>
+        <div class="fne"><i class="fa fa-sign-in" aria-hidden="true"></i>sign in</div>
+        <div class="fne"><i class="fa fa-sign-out" aria-hidden="true"></i>sign up</div>
+        <div class="fne"><i class="fa fa-mobile" aria-hidden="true"></i>call:9653848180</div>
+        <div class="fne"><i class="fa fa-commenting" aria-hidden="true"></i>info@examole.com</div>
+        <div class="fne2"></div>
+    </div>
+<!-- search nav bar -->
+<div class="sne">
+
+<div ><input class="sb" type="search"></div>
+<div class="sbb"><i class="fa fa-search botton" aria-hidden="true"></i></div>
+
+<div class="Ed">
+<div class="E">E</div>lite Shoppy<i class="fa fa-shopping-bag bi" aria-hidden="true"></i>
+</div>
+
+<div class="sod">share on :</div>
+</div>
+
+<!-- 2nd nav bar -->
+<div class="maindiv">
+    <div class="main">
+        HOME
+    <div class="effect "></div>
+    </div>
+
+    <div class="main bb">
+        MAN'S 
+        <div class="effect"></div> 
+        <!-- dropdown of men's wear -->
+        <div class="drop">
+        
+            <div class="img">
+                <div class="motion"></div>
+                <div class="motion2"></div>
+            </div>
+            
+        <div class="fld">
+            <div class="face"><a class="aa" href="">Clothing</a></div>
+            <div class="face"><a class="aa" href="">Wallets</a></div>
+            <div class="face"><a class="aa" href="">Footwear</a></div>
+            <div class="face"><a class="aa" href="">Watches</a></div>
+            <div class="face"><a class="aa" href="">Accessories</a></div>
+            <div class="face"><a class="aa" href="">Bags</a></div>
+            <div class="face"><a class="aa" href="">Caps & Hats</a></div>
+        </div>
+        
+        <div class="sld">
+            <div class="face"><a class="aa" href="">jpg</a></div>
+            <div class="face"><a class="aa" href="">Sunglasses</a></div>
+            <div class="face"><a class="aa" href="">Perfumes</a></div>
+            <div class="face"><a class="aa" href="">Beauty</a></div>
+            <div class="face"><a class="aa" href="">Shirts</a></div>
+            <div class="face"><a class="aa" href="">Sunglasses</a></div>
+            <div class="face"><a class="aa" href="">Swimwear</a></div>
+        </div>
+        
+        </div>
+        </div>
+        
+    <div class="main">
+        WOMAN'S
+        <div class="effect"></div>
+        
+        </div>
+
+    <div class="main">
+    ABOUT
+    <div class="effect"></div>
+    </div>
+
+    <div class="main">
+        CONTACT
+    <div class="effect"></div>
+    </div>
+
+   
+
+</div>
+
+
+
+
+
+</body>
+</html>

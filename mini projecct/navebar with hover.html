@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar with hover effect</title>
+    <style>
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    background-color: aquamarine;
+
+}
+
+.man
+{
+    position: relative;
+    
+}
+.woman
+{
+    position: relative;
+}
+.main
+{
+    background: coral;
+    /* display: flex; */
+    height: 50px;
+    width: 100%;
+}
+
+ul
+{
+   
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+li
+{
+height: 50px;
+width: 200px;
+display: flex;
+border: 2px solid black;
+align-items: center;
+justify-content: center;
+/* margin: 5px; */
+}
+
+.item-div
+{
+    height: 600px;
+    /* width: 100%; */
+    border: 2px solid orangered;
+    display: none;
+    position: absolute;
+    margin: auto;
+    top: 55px;
+    left: -290px;
+}
+
+.card 
+        {
+            height: 350px;
+            width: 250px;
+            background: gray;
+            margin: 80px ;
+            position: relative;
+            text-align: center;
+            box-shadow: 0 0 10px #000;
+            margin-left: -30px;
+            
+           
+        }
+
+        .rapper
+        {
+            display: flex;
+            /* border: 3px solid green; */
+            margin-left: 120px;
+        }
+
+    .new
+        {
+                background: lightcoral;
+                position: absolute;
+                top: 0;
+                left: 84%;
+                right: 0;
+                bottom: 0;
+                display: block;
+                height: 20px;
+                width: 40px;
+                z-index: 1;
+                
+
+         }
+      
+        .prd-img 
+        {
+            height: 250px;
+            background: white;
+        }
+        .prd-view
+        {
+            height: 50px;
+            width: 100%;
+            background:black;
+            position: absolute;
+            top:0px;
+            left:0;
+            transition: 1s;
+            opacity: 0;
+            line-height: 50px;
+            color: white;
+        }
+        .prd-info
+        {
+            height: 100px;
+            width: inherit;
+            background: white;
+            line-height: 27px;
+            
+            
+        }
+
+        .prd-img:hover .prd-view 
+        {
+            top:200px;
+            opacity: 1;
+        }
+
+        .normal
+        {
+            box-sizing: border-box;
+            background-color: aqua;
+            height: auto;
+            width: 150px;
+            padding: 0 0 0 0;
+            line-height: 20px; 
+            margin-left: 50px;
+            margin-top: 10px;
+            transition: 0.10s ;
+            position: relative;
+            outline: 5px solid aqua;
+
+
+            
+        }
+            
+
+
+        .effect
+        {
+         
+           transition: 0.2s;
+       
+        }
+        .normal:hover
+        {
+            outline: 4px  solid aqua;
+            outline-offset: 5px;
+        }
+        .a
+        {
+            color: lightcoral;
+            font-weight: bolder;
+        }
+
+        .b
+        {
+            font-weight: bolder;
+        }
+
+        .prd-view:hover
+        {
+            background: aqua;
+        }
+
+        /* rotaion image strat */
+        .prd-img
+        {
+           
+            position: relative;
+            
+        }
+        .front,.back
+        {
+            height: 250px;
+            width: 200px;
+            background: transparent;
+            position: absolute;
+            top:0;
+            left:0;
+            transition: 1s;
+            backface-visibility: hidden;
+        }
+        .front 
+        {
+            transform: rotateY(180deg);
+        }
+
+        .back 
+        {          
+            transform: rotateY(0deg);         
+        }
+        .prd-img:hover .front 
+        {
+            transform: rotateY(0deg);
+        }
+        .prd-img:hover .back 
+        {
+            transform: rotateY(180deg);
+        }
+        img
+        {
+            background-size: contain;
+            height: 250px;
+            width: 250px;
+        }
+
+    .man:hover .item-div
+    {
+        display: block;
+    }
+
+    .woman:hover .item-div
+    {
+        display: block;
+        margin-left: -200px;
+    }
+
+    .Bag:hover .item-div
+    {
+        display: block;
+        margin-left: 300px;
+        margin-top: 18px;
+    }
+
+    .footwear:hover .item-div
+    {
+        display: block;
+        margin-left: 300px;
+        margin-top: 18px;
+    }
+
+    </style>
+</head>
+<body>
+    
+
+
+    <div class="main">
+        <ul>
+            <li class="man">Man
+
+                <div class="item-div">
+                    <div class="rapper">
+                         <!-- 1st card html -->
+                         <div class="card">
+                             <div class="new">New</div>
+                             
+                             <div class="prd-img">
+                                 
+                                 <div class="front">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt=""  
+                                     >
+                                 </div>
+                                 <div class="back">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt=""  
+                                     >
+                                 </div>
+                                 
+                                 
+                                 <div class="prd-view">Quick View</div>
+                             </div>
+                           
+                             <div class="prd-info">
+                                 <span class="a">Party Men's Blazer</span><br>
+                                 <span class="b">$260.99 <del>$390.71</del></span>
+                                 <span>  <div class="normal"><b>Shop Now</b>
+                                     <div class="effect"></div>
+                                     </div> 
+                                     
+                                 </span>
+                             </div>
+                         </div>
+                 
+                         <!-- 2nd card html -->
+                 
+                         <div class="card">
+                             <div class="new">New</div>
+                             
+                             <div class="prd-img">
+                                 
+                                 <div class="front">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m3.jpg" alt=""  
+                                     >
+                                 </div>
+                                 <div class="back">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m3.jpg" alt=""  
+                                     >
+                                 </div>
+                                 
+                                 
+                                 <div class="prd-view">Quick View</div>
+                             </div>
+                           
+                             <div class="prd-info">
+                                 <span class="a">Party Men's Blazer</span><br>
+                                 <span class="b">$260.99 <del>$390.71</del></span>
+                                 <span>  <div class="normal"><b>Shop Now</b>
+                                     <div class="effect"></div>
+                                     </div> 
+                                     
+                                 </span>
+                             </div>
+                         </div>
+                 
+                         <!-- 3rd card html -->
+                 
+                         <div class="card">
+                             <div class="new">New</div>
+                             
+                             <div class="prd-img">
+                                 
+                                 <div class="front">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg" alt=""  
+                                     >
+                                 </div>
+                                 <div class="back">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg" alt=""  
+                                     >
+                                 </div>
+                                 
+                                 
+                                 <div class="prd-view">Quick View</div>
+                             </div>
+                           
+                             <div class="prd-info">
+                                 <span class="a">Party Men's Blazer</span><br>
+                                 <span class="b">$260.99 <del>$390.71</del></span>
+                                 <span>  <div class="normal"><b>Shop Now</b>
+                                     <div class="effect"></div>
+                                     </div> 
+                                     
+                                 </span>
+                             </div>
+                         </div>
+                 
+                         <!-- 4th card html -->
+                 
+                         <div class="card">
+                             <div class="new">New</div>
+                             
+                             <div class="prd-img">
+                                 
+                                 <div class="front">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg" alt=""  
+                                     >
+                                 </div>
+                                 <div class="back">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg" alt=""  
+                                     >
+                                 </div>
+                                 
+                                 
+                                 <div class="prd-view">Quick View</div>
+                             </div>
+                           
+                             <div class="prd-info">
+                                 <span class="a">Party Men's Blazer</span><br>
+                                 <span class="b">$260.99 <del>$390.71</del></span>
+                                 <span>  <div class="normal"><b>Shop Now</b>
+                                     <div class="effect"></div>
+                                     </div> 
+                                     
+                                 </span>
+                             </div>
+                         </div>
+                 
+                     </div>
+                     </div>
+                    </li>
+            <li class="woman">Woman
+                <div class="item-div">
+                    <div class="rapper">
+                         <!-- 1st card html -->
+                         <div class="card">
+                             <div class="new">New</div>
+                             
+                             <div class="prd-img">
+                                 
+                                 <div class="front">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt=""  
+                                     >
+                                 </div>
+                                 <div class="back">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt=""  
+                                     >
+                                 </div>
+                                 
+                                 
+                                 <div class="prd-view">Quick View</div>
+                             </div>
+                           
+                             <div class="prd-info">
+                                 <span class="a">Party Men's Blazer</span><br>
+                                 <span class="b">$260.99 <del>$390.71</del></span>
+                                 <span>  <div class="normal"><b>Shop Now</b>
+                                     <div class="effect"></div>
+                                     </div> 
+                                     
+                                 </span>
+                             </div>
+                         </div>
+                 
+                         <!-- 2nd card html -->
+                 
+                         <div class="card">
+                             <div class="new">New</div>
+                             
+                             <div class="prd-img">
+                                 
+                                 <div class="front">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m3.jpg" alt=""  
+                                     >
+                                 </div>
+                                 <div class="back">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m3.jpg" alt=""  
+                                     >
+                                 </div>
+                                 
+                                 
+                                 <div class="prd-view">Quick View</div>
+                             </div>
+                           
+                             <div class="prd-info">
+                                 <span class="a">Party Men's Blazer</span><br>
+                                 <span class="b">$260.99 <del>$390.71</del></span>
+                                 <span>  <div class="normal"><b>Shop Now</b>
+                                     <div class="effect"></div>
+                                     </div> 
+                                     
+                                 </span>
+                             </div>
+                         </div>
+                 
+                         <!-- 3rd card html -->
+                 
+                         <div class="card">
+                             <div class="new">New</div>
+                             
+                             <div class="prd-img">
+                                 
+                                 <div class="front">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg" alt=""  
+                                     >
+                                 </div>
+                                 <div class="back">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg" alt=""  
+                                     >
+                                 </div>
+                                 
+                                 
+                                 <div class="prd-view">Quick View</div>
+                             </div>
+                           
+                             <div class="prd-info">
+                                 <span class="a">Party Men's Blazer</span><br>
+                                 <span class="b">$260.99 <del>$390.71</del></span>
+                                 <span>  <div class="normal"><b>Shop Now</b>
+                                     <div class="effect"></div>
+                                     </div> 
+                                     
+                                 </span>
+                             </div>
+                         </div>
+                 
+                         <!-- 4th card html -->
+                 
+                         <div class="card">
+                             <div class="new">New</div>
+                             
+                             <div class="prd-img">
+                                 
+                                 <div class="front">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg" alt=""  
+                                     >
+                                 </div>
+                                 <div class="back">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg" alt=""  
+                                     >
+                                 </div>
+                                 
+                                 
+                                 <div class="prd-view">Quick View</div>
+                             </div>
+                           
+                             <div class="prd-info">
+                                 <span class="a">Party Men's Blazer</span><br>
+                                 <span class="b">$260.99 <del>$390.71</del></span>
+                                 <span>  <div class="normal"><b>Shop Now</b>
+                                     <div class="effect"></div>
+                                     </div> 
+                                     
+                                 </span>
+                             </div>
+                         </div>
+                 
+                     </div>
+                     </div>
+            </li>
+            <li class="Bag">Bag's
+                <div class="item-div">
+                    <div class="rapper">
+                         <!-- 1st card html -->
+                         <div class="card">
+                             <div class="new">New</div>
+                             
+                             <div class="prd-img">
+                                 
+                                 <div class="front">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt=""  
+                                     >
+                                 </div>
+                                 <div class="back">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt=""  
+                                     >
+                                 </div>
+                                 
+                                 
+                                 <div class="prd-view">Quick View</div>
+                             </div>
+                           
+                             <div class="prd-info">
+                                 <span class="a">Party Men's Blazer</span><br>
+                                 <span class="b">$260.99 <del>$390.71</del></span>
+                                 <span>  <div class="normal"><b>Shop Now</b>
+                                     <div class="effect"></div>
+                                     </div> 
+                                     
+                                 </span>
+                             </div>
+                         </div>
+                 
+                         <!-- 2nd card html -->
+                 
+                         <div class="card">
+                             <div class="new">New</div>
+                             
+                             <div class="prd-img">
+                                 
+                                 <div class="front">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m3.jpg" alt=""  
+                                     >
+                                 </div>
+                                 <div class="back">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m3.jpg" alt=""  
+                                     >
+                                 </div>
+                                 
+                                 
+                                 <div class="prd-view">Quick View</div>
+                             </div>
+                           
+                             <div class="prd-info">
+                                 <span class="a">Party Men's Blazer</span><br>
+                                 <span class="b">$260.99 <del>$390.71</del></span>
+                                 <span>  <div class="normal"><b>Shop Now</b>
+                                     <div class="effect"></div>
+                                     </div> 
+                                     
+                                 </span>
+                             </div>
+                         </div>
+                 
+                         <!-- 3rd card html -->
+                 
+                         <div class="card">
+                             <div class="new">New</div>
+                             
+                             <div class="prd-img">
+                                 
+                                 <div class="front">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg" alt=""  
+                                     >
+                                 </div>
+                                 <div class="back">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg" alt=""  
+                                     >
+                                 </div>
+                                 
+                                 
+                                 <div class="prd-view">Quick View</div>
+                             </div>
+                           
+                             <div class="prd-info">
+                                 <span class="a">Party Men's Blazer</span><br>
+                                 <span class="b">$260.99 <del>$390.71</del></span>
+                                 <span>  <div class="normal"><b>Shop Now</b>
+                                     <div class="effect"></div>
+                                     </div> 
+                                     
+                                 </span>
+                             </div>
+                         </div>
+                 
+                         <!-- 4th card html -->
+                 
+                         <div class="card">
+                             <div class="new">New</div>
+                             
+                             <div class="prd-img">
+                                 
+                                 <div class="front">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg" alt=""  
+                                     >
+                                 </div>
+                                 <div class="back">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg" alt=""  
+                                     >
+                                 </div>
+                                 
+                                 
+                                 <div class="prd-view">Quick View</div>
+                             </div>
+                           
+                             <div class="prd-info">
+                                 <span class="a">Party Men's Blazer</span><br>
+                                 <span class="b">$260.99 <del>$390.71</del></span>
+                                 <span>  <div class="normal"><b>Shop Now</b>
+                                     <div class="effect"></div>
+                                     </div> 
+                                     
+                                 </span>
+                             </div>
+                         </div>
+                 
+                     </div>
+                     </div>
+            </li>
+            <li class="footwear">footwear
+                <div class="item-div">
+                    <div class="rapper">
+                         <!-- 1st card html -->
+                         <div class="card">
+                             <div class="new">New</div>
+                             
+                             <div class="prd-img">
+                                 
+                                 <div class="front">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt=""  
+                                     >
+                                 </div>
+                                 <div class="back">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt=""  
+                                     >
+                                 </div>
+                                 
+                                 
+                                 <div class="prd-view">Quick View</div>
+                             </div>
+                           
+                             <div class="prd-info">
+                                 <span class="a">Party Men's Blazer</span><br>
+                                 <span class="b">$260.99 <del>$390.71</del></span>
+                                 <span>  <div class="normal"><b>Shop Now</b>
+                                     <div class="effect"></div>
+                                     </div> 
+                                     
+                                 </span>
+                             </div>
+                         </div>
+                 
+                         <!-- 2nd card html -->
+                 
+                         <div class="card">
+                             <div class="new">New</div>
+                             
+                             <div class="prd-img">
+                                 
+                                 <div class="front">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m3.jpg" alt=""  
+                                     >
+                                 </div>
+                                 <div class="back">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m3.jpg" alt=""  
+                                     >
+                                 </div>
+                                 
+                                 
+                                 <div class="prd-view">Quick View</div>
+                             </div>
+                           
+                             <div class="prd-info">
+                                 <span class="a">Party Men's Blazer</span><br>
+                                 <span class="b">$260.99 <del>$390.71</del></span>
+                                 <span>  <div class="normal"><b>Shop Now</b>
+                                     <div class="effect"></div>
+                                     </div> 
+                                     
+                                 </span>
+                             </div>
+                         </div>
+                 
+                         <!-- 3rd card html -->
+                 
+                         <div class="card">
+                             <div class="new">New</div>
+                             
+                             <div class="prd-img">
+                                 
+                                 <div class="front">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg" alt=""  
+                                     >
+                                 </div>
+                                 <div class="back">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg" alt=""  
+                                     >
+                                 </div>
+                                 
+                                 
+                                 <div class="prd-view">Quick View</div>
+                             </div>
+                           
+                             <div class="prd-info">
+                                 <span class="a">Party Men's Blazer</span><br>
+                                 <span class="b">$260.99 <del>$390.71</del></span>
+                                 <span>  <div class="normal"><b>Shop Now</b>
+                                     <div class="effect"></div>
+                                     </div> 
+                                     
+                                 </span>
+                             </div>
+                         </div>
+                 
+                         <!-- 4th card html -->
+                 
+                         <div class="card">
+                             <div class="new">New</div>
+                             
+                             <div class="prd-img">
+                                 
+                                 <div class="front">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg" alt=""  
+                                     >
+                                 </div>
+                                 <div class="back">
+                                     <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg" alt=""  
+                                     >
+                                 </div>
+                                 
+                                 
+                                 <div class="prd-view">Quick View</div>
+                             </div>
+                           
+                             <div class="prd-info">
+                                 <span class="a">Party Men's Blazer</span><br>
+                                 <span class="b">$260.99 <del>$390.71</del></span>
+                                 <span>  <div class="normal"><b>Shop Now</b>
+                                     <div class="effect"></div>
+                                     </div> 
+                                     
+                                 </span>
+                             </div>
+                         </div>
+                 
+                     </div>
+                     </div>
+            </li>
+        </ul>
+    </div>
+   
+    
+</body>
+</html>

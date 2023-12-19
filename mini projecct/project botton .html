@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn
+        {
+            height: 50px;
+            width: 150px;
+            border: 2px solid black;
+            text-align: center;
+            line-height: 50px ;
+            position: relative;
+            z-index: 0;
+            background-color: white;
+            overflow: hidden;
+            
+        }
+        .effect
+        {
+            height: inherit;
+            width: inherit;
+            background: olive;
+            line-height: 50px ;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: -1;
+            transition: 1s;
+           
+        }
+
+        .btn:hover .effect
+        {
+            position: absolute;
+            top: 0%;
+        }       
+        
+    </style>
+</head>
+<body>
+    <div class="btn">READ MORE
+        <div class="effect"></div>  
+    </div>
+    
+</body>
+</html>

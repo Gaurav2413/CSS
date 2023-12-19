@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{box-sizing: border-box;}
+        .card 
+        {
+            height: 350px;
+            width: 250px;
+            background: gray;
+            margin: 80px auto;
+            position: relative;
+            text-align: center;
+            box-shadow: 0 0 10px #000;
+            
+           
+        }
+
+    .new
+        {
+                background: lightcoral;
+                position: absolute;
+                top: 0;
+                left: 84%;
+                right: 0;
+                bottom: 0;
+                display: block;
+                height: 20px;
+                width: 40px;
+                z-index: 1;
+                
+
+         }
+      
+        .prd-img 
+        {
+            height: 250px;
+            background: white;
+        }
+        .prd-view
+        {
+            height: 50px;
+            width: 100%;
+            background:black;
+            position: absolute;
+            top:0px;
+            left:0;
+            transition: 1s;
+            opacity: 0;
+            line-height: 50px;
+            color: white;
+        }
+        .prd-info
+        {
+            height: 100px;
+            width: inherit;
+            background: white;
+            line-height: 27px;
+            
+            
+        }
+
+        .prd-img:hover .prd-view 
+        {
+            top:200px;
+            opacity: 1;
+        }
+
+        .normal
+        {
+            box-sizing: border-box;
+            background-color: aqua;
+            height: auto;
+            width: 150px;
+            padding: 0 0 0 0;
+            line-height: 20px; 
+            margin-left: 50px;
+            margin-top: 10px;
+            transition: 0.10s ;
+            position: relative;
+            outline: 5px solid aqua;
+
+
+            
+        }
+            
+
+
+        .effect
+        {
+         
+           transition: 0.2s;
+       
+        }
+        .normal:hover
+        {
+            outline: 4px  solid aqua;
+            outline-offset: 5px;
+        }
+        .a
+        {
+            color: lightcoral;
+            font-weight: bolder;
+        }
+
+        .b
+        {
+            font-weight: bolder;
+        }
+
+        .prd-view:hover
+        {
+            background: aqua;
+        }
+
+        /* rotaion image strat */
+        .prd-img
+        {
+           
+            position: relative;
+            
+        }
+        .front,.back
+        {
+            height: 250px;
+            width: 200px;
+            background: transparent;
+            position: absolute;
+            top:0;
+            left:0;
+            transition: 1s;
+            backface-visibility: hidden;
+        }
+        .front 
+        {
+            transform: rotateY(180deg);
+        }
+
+        .back 
+        {          
+            transform: rotateY(0deg);         
+        }
+        .prd-img:hover .front 
+        {
+            transform: rotateY(0deg);
+        }
+        .prd-img:hover .back 
+        {
+            transform: rotateY(180deg);
+        }
+        img
+        {
+            background-size: contain;
+            height: 250px;
+            width: 250px;
+        }
+
+  
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="new">New</div>
+        
+        <div class="prd-img">
+            
+            <div class="front">
+                <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg" alt=""  
+                >
+            </div>
+            <div class="back">
+                <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg" alt=""  
+                >
+            </div>
+            
+            
+            <div class="prd-view">Quick View</div>
+        </div>
+      
+        <div class="prd-info">
+            <span class="a">Party Men's Blazer</span><br>
+            <span class="b">$260.99 <del>$390.71</del></span>
+            <span>  <div class="normal"><b>Shop Now</b>
+                <div class="effect"></div>
+                </div> 
+                
+            </span>
+        </div>
+    </div>
+    
+</body>
+</html>

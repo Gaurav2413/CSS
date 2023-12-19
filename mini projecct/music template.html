@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+        *
+        {
+            box-sizing: border-box;
+        }
+        body
+        {
+        background-color: skyblue;
+        }
+        .main
+        {
+            height: 550px;
+            width: 280px;
+            background-color: rgba(255, 255, 255, 0.7);
+            margin: 50px auto ;
+            border-radius: 30px;
+            position: relative;
+        }
+
+        .nav
+        {
+            height: 70px;
+            width: inherit;
+            /* border: 2px solid; */
+            display: flex;
+            position: relative;
+            top: 10px;
+            justify-content: center;
+            line-height: 70px;
+            font-size: 12px;
+            font-family:  monospace;
+            color: gray;
+        }
+        .left,.right ,.left2,.right2,.middle
+        {
+            height: 50px;
+            width: 50px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border: 2px solid white;
+            border-radius: 50%;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            color: gray;
+            text-align: center;
+            line-height: 50px;
+            box-shadow: 0 7px 10px white , 10px 0 10px gray;
+            font-size: 20px;
+
+            
+        }
+        .right
+        {
+            top: 10px ;
+            left: 200px;
+        }
+
+        .normal
+        {
+            background: url(https://w0.peakpx.com/wallpaper/945/13/HD-wallpaper-lord-krishna-animation-lord-krishna-religious-hindu-god-god-cartoon.jpg);
+            background-size: cover;
+            height: 200px;
+            width: 200px;
+            padding: 0 0 0 15px;
+            line-height: 50px;
+            transition: 0.5s ;
+            position: absolute;
+            top: 80px;
+            left: 40px;
+            border-radius: 50%;
+            outline: 5px solid orange;
+            box-shadow: 0 7px 10px white , 20px 0 23px gray;  
+        }
+            
+        
+        .normal:hover
+        {
+            outline: 3px  solid black;
+            outline-offset: 8px;
+        }
+
+        .content
+        {
+          height: 100px;
+          width: inherit;
+          position: absolute;
+          top: 300px;
+          
+          justify-content: center;
+          
+        }
+        .h1 ,.h4 
+        {
+          font-size: 23px;
+          font-family:  monospace;
+          font-weight: bolder;
+          color: gray;
+          display: flex;
+          justify-content: center;
+        }
+
+        .h4   
+        {
+          font-size: 10px;
+        }
+
+        .input
+        {
+            display: flex;
+            justify-content: center;
+            
+            margin-top: 50px;
+
+        }
+
+        .left2
+        {
+            top: 450px;
+            left: 20px;
+        }
+        .right2
+        {
+            top: 450px;
+            left: 200px;
+        }
+
+        .middle
+        {
+            top: 450px;
+            left: 110px;
+            background: lightblue;
+            border: 2px solid lightblue;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="nav">
+            <div class="left"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
+            PLAYING NOW
+            <div class="right"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        </div>
+
+        <div class="normal">
+            <div class="effect"></div>
+         </div>
+
+        <div class="content">
+
+            <div class="h1"> Shree Krishna </div>
+            <div class="h4">ft.hare Krishna</div>
+            <div class="input"><input type="range"></div>
+        </div>
+        <div class="footer">
+            <div class="left2"><i class="fa fa-angle-double-left" aria-hidden="true"></i></div>
+
+            <div class="middle"><i class="fa fa-pause" aria-hidden="true"></i></div>
+            
+            <div class="right2"><i class="fa fa-angle-double-right" aria-hidden="true"></i></div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card with effect</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+         }
+        .main
+        {
+            height: 600px;
+            width: 900px;
+            background:linear-gradient(coral, indigo );
+            margin: 40Px auto;
+            overflow: hidden;
+            overflow: hidden;
+            position: relative;
+            border-radius: 30px;
+            
+        }
+
+        .nav
+        {
+           color: white;
+           display: flex;
+           position: relative;
+           top: 50px;
+           left: 45px;
+           text-align: center;
+           letter-spacing: 1px;
+           cursor: grab;
+        }
+
+        .ul
+        {
+            list-style-type: none;
+            display: flex;
+            margin-left: 250px;
+            margin-top: -17px;
+            
+        }
+        .li
+        {
+            margin-left: 50px;
+            margin-top: 20px;
+            
+        }
+        .button
+        {
+            width: 80px;
+            height: 30px;
+            border: 2px solid white;
+            background: transparent;
+            border-radius: 30px;
+            margin-left: 50px;
+            color: white;
+        }
+        .a
+        {
+          text-decoration: none;
+          color: white;
+        }
+
+        .circlea
+        {
+            height: 100px;
+            width: 100px;
+            background:linear-gradient(red, indigo 50%);
+            position: absolute;
+            top: 91px;
+            left: -40px;
+            border-radius: 50%;
+            border: 5px;
+            overflow: hidden;
+        }
+
+            .circleb
+        {
+            height: 50px;
+            width: 50px;
+            background:linear-gradient(red,indigo 50%);
+            top: 569px;
+            left: 381px;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .circlec
+        {
+            height: 50px;
+            width: 50px;
+            background:linear-gradient(red,indigo 50%);
+            top: 156px;
+            left: 10px;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .circled
+        {
+            height: 450px;
+            width: 450px;
+            background:linear-gradient(blue ,rgb(231, 75, 101));
+            top: 176px;
+            left: 600px;
+            border-radius: 50%;
+            position: absolute;
+        }  
+            
+
+            .circlef
+        {
+            height: 500px;
+            width: 500px;
+            /* background:linear-gradient(red,indigo 50%); */
+            top: 150px;
+            left: 573px;
+            border-radius: 50%;
+            position: absolute;
+            border: 7px solid rgb(230, 19, 54);
+        }
+
+        .circleg
+        {
+            height: 70px;
+            width: 70px;
+            top: 343px;
+            left: 722px;
+            border-radius: 50%;
+            position: absolute;
+            background:linear-gradient(red,indigo 50%);
+            z-index: 1;
+        }
+
+        .circleh
+        {
+            height: 50px;
+            width: 50px;
+            top: 353px;
+            left: 732px;
+            border-radius: 50%;
+            position: absolute;
+            background: rgb(150, 17, 173);
+            z-index: 1;
+            
+        }
+        .carda
+        {
+            height: 165px;
+            width: 266px;
+            /* border: 2px solid #000000; */
+            position: absolute;
+            top: 345px;
+            left: 475px;
+            border-radius: 20px;
+            transform: rotate(-20deg);
+            background: rgba(255, 255 , 255, 0.3);
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 17px rgb(110, 110, 122) ,rgb(231, 75, 101);
+            z-index: 0;
+            cursor: grab;
+        }
+
+        .cardb
+        {
+            height: 206px;
+            width: 322px;
+            /* border: 2px solid #000000; */
+            position: absolute;
+            top: 150px;
+            left: 450px;
+            border-radius: 20px;
+            transform: rotate(10deg);
+            background: rgba(255, 255 , 255, 0.3);
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 17px rgb(110, 110, 122) ,rgb(231, 75, 101);
+            z-index: 2;
+            cursor: grab;
+        }
+        .ca
+        {
+            position: absolute;
+            top: 13px;
+            left: 247px;
+            color: white;
+            font-size: 24px;
+            font-family:  Helvetica;
+           
+        }
+        .cb
+        {
+            position: absolute;
+            top: 90px;
+            left: 11px;
+            color: white;
+            font-size: 22px;
+            font-family:  Helvetica;
+           
+        }
+        .cc
+        {
+            position: absolute;
+            top: 145px;
+            left: 16px;
+            color: white;
+            font-size: 12px;
+            font-family:  Helvetica;
+           
+        }
+
+        .cd
+        {
+            position: absolute;
+            top: 167px;
+            left: 14px;
+            color: white;
+            font-size: 22px;
+            font-family:  Helvetica;
+           
+        }
+        .ce
+        {
+            position: absolute;
+            top: 142px;
+            left: 225px;
+            color: white;
+            font-size: 25px;
+            font-family:  Helvetica;
+           
+        }
+        .cea
+        {
+            position: absolute;
+            top: 155px;
+            left: 227px;
+            color: white;
+            font-size: 12px;
+            font-family:  Helvetica;
+           
+        }
+        .ccd
+        {
+            height: 56px;
+            width: 56px;
+            border: 1px solid white;
+            position: absolute;
+            top: 17px;
+            left: 21px;
+            
+            
+            
+           
+        }
+        .caa
+        {
+            position: absolute;
+            top: 13px;
+            left: 200px;
+            color: white;
+            font-size: 24px;
+            font-family:  Helvetica;
+           
+        }
+        .cab
+        {
+            position: absolute;
+            top: 70px;
+            left: 11px;
+            color: white;
+            font-size: 18px;
+            font-family:  Helvetica;
+           
+        }
+        .cac
+        {
+            position: absolute;
+            top: 113px;
+            left: 16px;
+            color: white;
+            font-size: 10px;
+            font-family:  Helvetica;
+           
+        }
+
+        .cad
+        {
+            position: absolute;
+            top: 127px;
+            left: 14px;
+            color: white;
+            font-size: 17   px;
+            font-family:  Helvetica;
+           
+        }
+        .cae
+        {
+            position: absolute;
+            top: 102px;
+            left: 190px;
+            color: white;
+            font-size: 23px;
+            font-family:  Helvetica;
+           
+        }
+        .caea
+        {
+            position: absolute;
+            top: 115px;
+            left: 190px;
+            color: white;
+            font-size: 10px;
+            font-family:  Helvetica;
+           
+        }
+        .cacd
+        {
+            height: 40px;
+            width: 44px;
+            border: 1px solid white;
+            position: absolute;
+            top: 17px;
+            left: 21px;
+        }
+        
+        .contant
+         {
+            position: absolute;
+            top: 120px;
+            left: 55px;
+            color: white;
+            font-size: 25px;
+            font-family:  Helvetica;  
+         } 
+         
+         .contant2
+         {
+            position: absolute;
+            top: 310px;
+            left: 55px;
+            color: white;
+            font-size: 19px;
+            font-family:  Helvetica;  
+         }
+         .botton2
+         {
+            width: 100px;
+            height: 30px;
+            border:  blue;
+            /* background: transparent; */
+            border-radius: 30px;
+            margin-left: 50px;
+            color: white;
+            position: absolute;
+            top: 410px;
+            left: 5px;
+            background: blue;
+            cursor: grab;
+         }
+         .contant3
+         {
+            position: absolute;
+            top: 450px;
+            left: 395px;
+            color: white;
+            font-size: 6px;
+            font-family:  Helvetica;  
+         } 
+
+         .contant4
+         {
+            position: absolute;
+            top: 528px;
+            left: 285px;
+            color: white;
+            font-size: 6px;
+             
+         }
+        
+
+
+    
+    </style>
+</head>
+<body>
+<!-- nav bar -->
+<div class="main">
+
+    <div class="nav"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Cashfly
+    <ul class="ul">
+        <li class="li"><a class="a" href="">About</a></li>
+        <li class="li"><a class="a" href="">Product</a></li>
+        <li class="li"><a class="a" href="">Pricing</a></li>
+    </ul>
+<button class="button">Sign up</button>
+</div>
+
+<!-- circles -->
+<div class="circlea"></div>
+<div class="circleb"></div>
+<div class="circlec"></div>
+<div class="circled"></div>
+<div class="circlef"></div>
+<div class="circleg"></div>
+<div class="circleh"></div>
+
+<!-- carda and cardb  -->
+<div class="carda">
+    <span class="caa"><b>VISA</b></span>
+    <span class="cab"><b>5656&nbsp;5656&nbsp;4568&nbsp;5454</b></span>
+    <span class="cac"><b>CARD HOLDER</b></span>
+    <span class="cad"><b>Jay&nbsp;Gadhiya</b></span>
+    <span class="caea">EXPIRE'S </span>
+    <span class="cae"><b> <BR>09/24</BR></b></span>
+    <div class="cacd"></div>
+</div>
+<div class="cardb">
+    <span class="ca"><b>VISA</b></span>
+    <span class="cb"><b>3516&nbsp;5656&nbsp;4454&nbsp;4568</b></span>
+    <span class="cc"><b>CARD HOLDER</b></span>
+    <span class="cd"><b>Gaurav&nbsp;Nagar</b></span>
+    <span class="cea">EXPIRE'S </span>
+    <span class="ce"><b> <BR>09/24</BR></b></span>
+    <div class="ccd"></div>
+</div>
+
+<!-- card content  -->
+<div class="contant">
+    <h1>Make Your <br> Payment <br>More Esaier</h1>
+</div>
+<div class="contant2">
+    <h6>we providind new exprince of make Payment <br>
+        and good qulityes of fianance and service <br>
+        all over world join us without any joining fee today</h6>
+</div>
+<button class="botton2">Get started</button>
+</div>
+<div class="contant3">
+    <h1>Download App <i class="fa fa-download" aria-hidden="true"></i></h1>
+</div>
+
+<div class="contant4">
+    <h1>Learn more about digital banking </h1><a href="">Here</a>
+</div>
+    
+</body>
+</html>

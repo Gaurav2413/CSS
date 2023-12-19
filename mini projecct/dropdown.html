@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown with hover</title>
+    <link rel="stylesheet" href="dropdown.css">
+    <style>
+        *{box-sizing: border-box}
+        .body{
+            margin: 0;
+            padding: 0;
+        }
+    
+      .drop{
+       height: 330px;
+       width: 800px;
+       background: white;
+       padding: 40px 40px ;
+       box-shadow: 0 0 12px gray;
+       display: flex;
+
+      }
+      
+        .img
+        {
+            height:250px;
+            width: 350px;
+            background: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/top2.jpg);
+            background-repeat: no-repeat ;
+            position: relative;
+            overflow: hidden;
+           
+            
+        }
+        .motion
+        {
+            height: 300px;
+            width: 350px;
+            background-color:  rgba(0, 0, 0, 0.2);  
+            position: absolute;
+            left: 100%;
+            bottom: 100%; 
+            transition: 1s;
+        }
+        .motion2
+        {
+            height: 300px;
+            width: 350px;
+            background: rgba(0, 0, 0, 0.2);  
+            position: absolute;
+            top: 100%;
+            right: 100%; 
+            transition: 1s; 
+        }
+
+        .img:hover .motion
+        {   
+            left: 0%;
+            bottom: 0%;
+        }
+        .img:hover .motion2
+        {   
+            top: 0%;
+            right: 0%;
+        }
+
+        .fld
+        {
+            height: 260px;
+            width: 150px;
+            background: white;
+            transform: translate(30px);
+            /* justify-content: center; */
+            
+        }
+
+        .sld
+        {
+            height: 260px;
+            width: 150px;
+            background: white;
+            transform: translate(60px);
+        }
+        .face
+        {
+            height: 35px;
+            width: auto;
+            color: gray;
+        }
+
+        .aa
+        {
+            text-decoration: none;
+            color: gray;
+            transition: 1s;
+        }
+
+        .aa:hover
+        {
+            color: aqua;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- dropdown of men's wear -->
+<div class="drop">
+
+    <div class="img">
+        <div class="motion"></div>
+        <div class="motion2"></div>
+    </div>
+    
+<div class="fld">
+    <div class="face"><a class="aa" href="">Clothing</a></div>
+    <div class="face"><a class="aa" href="">Wallets</a></div>
+    <div class="face"><a class="aa" href="">Footwear</a></div>
+    <div class="face"><a class="aa" href="">Watches</a></div>
+    <div class="face"><a class="aa" href="">Accessories</a></div>
+    <div class="face"><a class="aa" href="">Bags</a></div>
+    <div class="face"><a class="aa" href="">Caps & Hats</a></div>
+</div>
+
+<div class="sld">
+    <div class="face"><a class="aa" href="">jpg</a></div>
+    <div class="face"><a class="aa" href="">Sunglasses</a></div>
+    <div class="face"><a class="aa" href="">Perfumes</a></div>
+    <div class="face"><a class="aa" href="">Beauty</a></div>
+    <div class="face"><a class="aa" href="">Shirts</a></div>
+    <div class="face"><a class="aa" href="">Sunglasses</a></div>
+    <div class="face"><a class="aa" href="">Swimwear</a></div>
+</div>
+
+</div>
+
+    
+</body>
+</html>

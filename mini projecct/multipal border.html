@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multipal border</title>
+    <style>
+       body
+       {
+        background-color:rgba(0, 0, 0, 1);
+       }
+
+       div
+     {
+        height: 400px;
+        width: 300px;
+        border: 1px solid white;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        border-radius: 20px;
+     }
+
+     div:before
+     {
+        content: "";
+    position: absolute;
+    height: 200%;
+    width:200%;
+    background: conic-gradient(
+        #FF0000,
+        #00FFF6,  
+        #F7B500,
+        #0000FF,
+        #fd0056,
+        #f9f9f9,
+        #57F900     );
+        top:  -46%;
+        left: -115px;
+        animation: gogo 1.5s  infinite linear;
+     }
+        
+    @keyframes gogo 
+    {
+        100%
+        {
+        transform:rotate(360deg)
+    }
+    }
+
+    div:after
+    {
+        content: "";
+        position: absolute;
+        height: 95%;
+        width: 95%;
+        background-color: #000000;
+        top: 10px;
+        left: 7px;
+        border-radius: 20px;
+        place-items: center;
+        
+    }
+
+       
+
+    </style>
+</head>
+<body>
+
+    <div></div>
+    
+</body>
+</html>

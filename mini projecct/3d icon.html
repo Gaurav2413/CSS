@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a 
+        {
+            height: 100px;
+            width: 100px;
+            display: block;
+            margin: 200px auto;
+            position: relative;
+            transition: 1s;
+            transform-style: preserve-3d;
+            text-align: center;
+            line-height: 100px;
+            animation: ghumighumi 3s linear infinite;
+            
+        }
+
+        @keyframes ghumighumi{
+  0% { transform: rotate3d(1, 1.5, -1, 0deg); }
+  100% { transform: rotate3d(1, 1.5, -1, 360deg); }
+}
+        .a
+        {
+            height: 100px;
+            width: 100px;
+            background: lightblue;
+            position: absolute;
+            top:0;
+            left:0;
+            transform: rotateY(0deg) translateZ(50px);
+            backface-visibility: hidden;
+            
+            
+        }
+        .b
+        {
+            height: 100px;
+            width: 100px;
+            background: lightcoral;
+            position: absolute;
+            top:0;
+            left:0;
+            transform: rotateY(90deg) translateZ(50px);
+            backface-visibility: hidden;
+        }
+
+        .c
+        {
+            height: 100px;
+            width: 100px;
+            background: green;
+            position: absolute;
+            top:0;
+            left:0;
+            transform: rotateY(180deg) translateZ(50px);
+            backface-visibility: hidden;
+        }
+
+        .d
+        {
+            height: 100px;
+            width: 100px;
+            background: red;
+            position: absolute;
+            top:0;
+            left:0;
+            transform: rotateY(270deg) translateZ(50px);
+            backface-visibility: hidden;
+        }
+
+        .e
+        {
+            height: 100px;
+            width: 100px;
+            background: brown;
+            position: absolute;
+            top:0;
+            left:0;
+            transform: rotateX(90deg) translateZ(50px);
+            backface-visibility: hidden;
+        }
+
+        .f
+        {
+            height: 100px;
+            width: 100px;
+            background:yellow;
+            position: absolute;
+            top:0;
+            left:0;
+            transform: rotateX(-90deg) translateZ(50px);
+            backface-visibility: hidden;
+        }
+
+
+        a:hover 
+        {
+            transform: rotateY(360deg) translateZ(0px);
+        }
+     
+       
+
+
+    </style>
+</head>
+<body>
+    
+    <a href="">
+        <div class="a">
+            side1
+        </div>
+
+        <div class="b">
+            side2
+        </div>
+
+        <div class="c">
+        side3
+        </div>
+
+        <div class="d">
+        side4
+        </div>
+
+        <div class="e">
+        side5
+        </div>
+
+        <div class="f">
+        side6
+        </div>
+        
+    </a>
+</body>
+</html>

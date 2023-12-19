@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+        *
+        {box-sizing: border-box;
+        margin: 0%;
+        padding: 0%;
+        
+        }
+        .main
+        {
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            background: url(https://wpresidence.net/wp-content/uploads/2022/10/wpresidece-header.jpg);
+            
+        }
+        .main2
+        {
+            height: 100%;
+            width: 100%;
+            background-color:rgba(0, 0, 255, 0.30);
+        }
+        .header
+        {
+           height: 40px;
+            width: inherit;
+            border-bottom: 1px solid white;
+            display: grid;
+            grid-template-columns:350px 450px;
+            justify-content: space-between;
+
+        
+        }
+        .part1,.part2,.x
+        {     
+            /* height: inherit;     */
+            border-left: 1px solid white;
+            color: white;
+            
+              
+        }
+
+        .part1 
+        {
+            display: grid;
+            grid-template-columns: 45px 45px 45px 45px 45px 45px 45px ;
+            padding-left: 35px;
+            
+            
+            
+            
+            
+        }
+
+        .part2
+        {
+            display: grid;
+            grid-template-columns:100px 1fr 1fr ;
+            /* column-gap: 10px; */
+            border-left: 1px solid white;
+            padding-right: 20px;
+            
+            
+            }
+
+            .fa
+            {
+                align-items: center;
+                padding: 10px;
+                display: inline;
+                line-height: 30px;
+            }
+
+            .nav
+            {
+                height: 100px;
+                /* background-color: blue; */
+                justify-content: center;
+                position: relative;
+            }
+            .ul
+            {
+                height: inherit;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* border: 2px solid yellow; */
+                line-height: 50px;
+                color: white;
+                list-style: none;
+                color: white;
+                
+                
+                
+                
+            }
+            .y
+            {
+                /* border: 2px solid red; */
+                margin: 10px;
+                height: 50px;
+
+                width: 60px;
+                padding-left: 10px;
+                font-weight: bolder;
+                
+                
+
+            }
+
+            .z
+            {
+                color: white;
+                text-decoration: none;
+            }
+
+            .p
+            {
+                list-style: none;
+                text-align: center;
+                color: black;
+            }
+
+            .homepage
+            {
+                width: 250px;
+                background: white  ;
+                list-style: none;
+                border-radius: 10px;
+                display: none;
+                z-index: 2;
+                border: 2px solid red;
+            }
+
+            
+            .homepage2
+            {
+                width: 1400px;
+                background: white  ;
+                list-style: none;
+                border-radius: 10px;
+                display: flex;
+                margin-left: -600px;
+                justify-content: space-around;
+                text-align: center;
+                display: none;
+                
+                
+            }
+
+            .demo1
+            {
+                
+                width: 200px;
+                z-index: 1;
+                
+            }
+            .demo2
+            {
+            
+                width: 200px;
+                z-index: 1;
+            }
+            .demo3
+            {
+                
+               
+                width: 200px;
+                z-index: 1;
+            }
+            .demo4
+            {
+                
+                width: 200px;
+                z-index: 1;
+                
+            }
+
+            .content
+            {
+                color: white;
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                font-size: 55px;
+                z-index: 0;
+                
+            }
+
+            .content2
+            {
+
+                position: absolute;
+                top: 49%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                font-size: 15px;
+                color: white; 
+                z-index: 0;               
+            }
+            .b{
+                border-right: 1px solid white;
+            }
+            .logo
+            {
+                
+                
+
+                position: absolute;
+                top: 20px;
+                left: 50px;
+            }
+
+            .element
+            {
+                color: white;
+                position: absolute;
+                top: 35%;
+                left: 75%;
+                font-weight: bolder;
+                font-size: 20px;
+                
+
+            }
+            ul
+            {
+                color: red;
+            }
+
+            .p
+            {
+                z-index: 1;
+            }
+            
+            
+         /* hover section  */
+            .y:hover .homepage
+            {
+                display: block;
+            }
+            .y:hover .homepage2
+            {
+                display: flex;
+            }
+
+             .p:hover{
+                color: aqua;
+                transform: translate(15px);
+                  
+            }
+
+            
+             
+        
+    </style>
+</head>
+<body>
+
+    <div class="main"><div class="main2">
+        <div class="header">
+            <div class="part1 ">
+                <div class="x"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                <div class="x"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                <div class="x"><i class="fa fa-linkedin" aria-hidden="true"></i></div>          
+                <div class="x"><i class="fa fa-pinterest-p" aria-hidden="true"></i></div>
+                <div class="x"><i class="fa fa-youtube-play" aria-hidden="true"></i></div>          
+                <div class="x"><i class="fa fa-instagram" aria-hidden="true"></i></div>    
+                <div class="x b"><i class="fa fa-commenting-o" aria-hidden="true"></i></div>          
+            </div>
+
+            
+            
+            <div class="part2">
+                <div class="x"><i class="fa fa-heart" aria-hidden="true"></i>Favorite</div>
+                <div class="x"><i class="fa fa-envelope-o" aria-hidden="true"></i>@12gmail.com</div>
+                <div class="x b"><i class="fa fa-whatsapp" aria-hidden="true"></i>-919653848180</div>
+                
+            </div>
+        </div>
+
+        <div class="nav">
+
+            <span class="logo"><img src="https://wpresidence.net/wp-content/uploads/2020/07/transparentopt.png" alt=""></span>
+            <ul class="ul">
+                <li class="y">Home
+                    <div class="homepage"> 
+                        
+                        <ul class="ttly">
+                            <li class="p">homepage1</li>
+                            <li class="p">homepage1</li>
+                            <li class="p">homepage1</li>
+                            <li class="p">homepage1</li>
+                            <li class="p">homepage1</li>
+                            <li class="p">homepage1</li>
+                            <li class="p">homepage1</li>
+                            <li class="p">homepage1</li>
+                            <li class="p">homepage1</li>
+                        </ul>
+                    
+                </div>
+                </li>
+                <li class="y">Demos
+                    <div class="homepage2"> 
+                        <div class="demo1">
+                        
+                        <ul>Demo1
+                            <li class="p">homepage1</li>
+                            <li class="p">homepage1</li>
+                            <li class="p">homepage1</li>
+                            <li class="p">homepage1</li>
+                            <li class="p">homepage1</li>
+                            <li class="p">homepage1</li>
+                            <li class="p">homepage1</li>
+                            <li class="p">homepage1</li>
+                            <li class="p">homepage1</li>
+                        </ul>
+                    </div>
+
+                        <div class="demo2">
+                            <ul>Demo2
+                                <li class="p">homepage1</li>
+                                <li class="p">homepage1</li>
+                                <li class="p">homepage1</li>
+                                <li class="p">homepage1</li>
+                                <li class="p">homepage1</li>
+                                <li class="p">homepage1</li>
+                                <li class="p">homepage1</li>
+                                <li class="p">homepage1</li>
+                                <li class="p">homepage1</li>
+                            </ul>
+                        </div>
+                        <div class="demo3">
+                            <ul>Demo3
+                                <li class="p">homepage1</li>
+                                <li class="p">homepage1</li>
+                                <li class="p">homepage1</li>
+                                <li class="p">homepage1</li>
+                                <li class="p">homepage1</li>
+                                <li class="p">homepage1</li>
+                                <li class="p">homepage1</li>
+                                <li class="p">homepage1</li>
+                                <li class="p">homepage1</li>
+                            </ul>
+                        </div>
+                        <div class="demo4">
+                            <ul>Demo
+                                <li class="p">homepage1</li>
+                                <li class="p">homepage1</li>
+                                <li class="p">homepage1</li>
+                                <li class="p">homepage1</li>
+                                <li class="p">homepage1</li>
+                                <li class="p">homepage1</li>
+                                <li class="p">homepage1</li>
+                                <li class="p">homepage1</li>
+                                <li class="p">homepage1</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                </li>
+                <li class="y">List</li>
+                <li class="y">Property</li>
+                <li class="y">Home</li>
+            </ul>
+
+            <div class="element"><i class="fa fa-phone" aria-hidden="true"></i>9653848180</div>
+        </div>
+
+        
+    </div>
+    <h1 class="content">Find Your Dream Home</h1>
+    <h4 class="content2">English is one of the leading languages ​​in the world. Since English is the language of international trade, English is a basic requirement for everyone. Not only that, you can also interact with people from all over the world. Today, fluency in English is one of the basic requirements for a trouble-free life.</h4>
+    </div>
+    
+</body>
+</html>

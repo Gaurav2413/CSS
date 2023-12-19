@@ -1,0 +1,185 @@
+/* man hover deopdown css */
+.drop{
+    height: 330px;
+    width: 700px;
+    background: white;
+    padding: 40px 40px ;
+    box-shadow: 0 0 12px gray;
+    display: flex;
+    margin-top: 10px; 
+    display: none;   
+   }
+   
+   
+     .img
+     {
+         height:250px;
+         width: 350px;
+         background: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/top2.jpg);
+         background-repeat: no-repeat ;
+         position: relative;
+         overflow: hidden;
+        
+         
+     }
+     .motion
+     {
+         height: 300px;
+         width: 350px;
+         background-color:  rgba(0, 0, 0, 0.2);  
+         position: absolute;
+         left: 100%;
+         bottom: 100%; 
+         transition: 1s;
+     }
+     .motion2
+     {
+         height: 300px;
+         width: 350px;
+         background: rgba(0, 0, 0, 0.2);  
+         position: absolute;
+         top: 100%;
+         right: 100%; 
+         transition: 1s; 
+     }
+
+     .img:hover .motion
+     {   
+         left: 0%;
+         bottom: 0%;
+     }
+     .img:hover .motion2
+     {   
+         top: 0%;
+         right: 0%;
+     }
+
+     .fld
+     {
+         height: 260px;
+         width: 130px;
+         background: white;
+         transform: translate(30px);
+         /* justify-content: center; */
+         
+     }
+
+     .sld
+     {
+         height: 260px;
+         width: 130px;
+         background: white;
+         transform: translate(60px);
+         background-color: transparent;
+     }
+     .face
+     {
+         height: 35px;
+         width: auto;
+         color: gray;
+     }
+
+     .aa
+     {
+         text-decoration: none;
+         color: gray;
+         transition: 1s;
+     }
+
+     .aa:hover
+     {
+         color: aqua;
+     }
+
+     /* woman  hover dropdown list */
+     .drop{
+        height: 330px;
+        width: 700px;
+        background: white;
+        padding: 40px 40px ;
+        box-shadow: 0 0 12px gray;
+        display: flex;
+        margin-top: 10px; 
+        display: none;   
+       }
+       
+       
+         .img
+         {
+             height:250px;
+             width: 350px;
+             background: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/top2.jpg);
+             background-repeat: no-repeat ;
+             position: relative;
+             overflow: hidden;
+            
+             
+         }
+         .motion
+         {
+             height: 300px;
+             width: 350px;
+             background-color:  rgba(0, 0, 0, 0.2);  
+             position: absolute;
+             left: 100%;
+             bottom: 100%; 
+             transition: 1s;
+         }
+         .motion2
+         {
+             height: 300px;
+             width: 350px;
+             background: rgba(0, 0, 0, 0.2);  
+             position: absolute;
+             top: 100%;
+             right: 100%; 
+             transition: 1s; 
+         }
+    
+         .img:hover .motion
+         {   
+             left: 0%;
+             bottom: 0%;
+         }
+         .img:hover .motion2
+         {   
+             top: 0%;
+             right: 0%;
+         }
+    
+         .fld
+         {
+             height: 260px;
+             width: 130px;
+             background: white;
+             transform: translate(30px);
+             /* justify-content: center; */
+             
+         }
+    
+         .sld
+         {
+             height: 260px;
+             width: 130px;
+             background: white;
+             transform: translate(60px);
+             background-color: transparent;
+         }
+         .face
+         {
+             height: 35px;
+             width: auto;
+             color: gray;
+         }
+    
+         .ab
+         {
+             text-decoration: none;
+             color: gray;
+             transition: 1s;
+         }
+    
+         .ab:hover
+         {
+             color: aqua;
+         }

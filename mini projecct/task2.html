@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>glass form</title>
+    <style>
+     .a
+     {
+        height: 100vh;
+        width: 100vw;
+        background: black;
+       
+     }
+     .b {
+    height: 400px;
+    width: 300px;
+    background-color:rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+    transform: translate(525px,-170px);
+    position: absolute;
+    box-shadow: 0 0 40px black;
+    backdrop-filter: blur(8px);
+}
+.c {
+    height: 150px;
+    width: 150px;
+    background: linear-gradient(blue ,lightblue);
+    border-radius: 50%;
+    transform: translate(450px,-84px);
+}
+     .d {
+    height: 150px;
+    width: 150px;
+    background: linear-gradient(red,rgb(255, 179, 0));
+    border-radius: 50%;
+    transform: translate(750px,447px);
+        }
+        .e{
+    height: 40px;
+    width: 240px;
+    margin: 3px;
+    background-color:white;
+    border-radius: 8px;
+    border: none;
+
+  }
+  .f{
+
+    margin: 15px 0 0 20px;
+            
+ }
+ .Username{
+            color: white;
+     }
+         .h2{
+
+            transform: translate(100px,30px);
+         }
+         .facebook{
+            height: 27px;
+           width: 90px;
+        transform: translate(150px, -7px)
+        
+
+         }
+         .Google{
+           height: 27px;
+           width: 90px;
+           transform: translate(15px, 25px)
+
+         }
+         .in{
+        background-color: rgba(255, 255, 255 ,0.07);
+        outline: none;
+        border: none;
+        height: 30px;
+        width: 100%;
+        color:green;
+         }
+
+    ::placeholder
+    {
+        color:#e5e5e5;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="a">
+        <div class="d"></div>
+        <div class="c"></div>
+        <div class="b">
+           
+           
+             <form>
+            
+            <table class="f">
+        
+                <h2 class="Username , h2" cl>Login here</h2>
+                <tr><td><br></td></tr>
+                <tr><td class="Username">Username</td></tr>
+                <td><input class="in"  type="text" placeholder="Email or Phona"    pattern="[a-zA-Z].{3,30}" ></td>
+                <tr><td><br></td></tr>
+                <tr><td class="Username">Password</td></tr> 
+                <tr><td><input class="in" type="password" placeholder="Password"></td></tr>
+                <tr><td><br></td></tr>
+                <tr><td><br></td></tr>
+                <tr><td><input type="submit" class="e" value="Log in"></td></tr>
+                <tr><td><input type="submit" class="Google" value="Google"></td></tr> 
+                <tr><td><input type="submit" class="facebook" value="facebook"></td></tr>
+            </table>
+        </form>
+        </div>
+        
+        
+    </div>
+    
+    
+    
+</body>
+</html>
